@@ -204,7 +204,19 @@ void list_print(struct list *linked_list)
     struct list_node *iter = linked_list->first;
     while (iter != NULL)
     {
-        printf("%d\n", iter->value);
+        printf("%d\t", iter->value);
         iter = iter->next;
     }
+}
+
+int list_find(struct list *linked_list, LIST_VALUE_TYPE value)
+{
+    struct list_node *iter = linked_list->first;
+    while (iter != NULL)
+    {
+        if (iter->value == value)
+            return 1;
+        iter = iter->next;
+    }
+    return 0;
 }

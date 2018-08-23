@@ -41,5 +41,6 @@ struct list *list_init();
 void list_destroy(struct list *linked_list);
 void list_print(struct list *linked_list);
 
+int list_find(struct list *linked_list, LIST_VALUE_TYPE value);
 
 #endif
