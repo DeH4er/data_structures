@@ -17,9 +17,13 @@ typedef struct _bsnode
 } bsnode;
 
 void bs_add(bsnode **root, BS_VALUE_TYPE value);
-void bs_print(bsnode *root);
+void bs_add_v(bsnode **root, BS_VALUE_TYPE vertexes[], int vertexes_size);
+
 int bs_find(bsnode *root, BS_VALUE_TYPE value);
-void bs_remove(bsnode *root, BS_VALUE_TYPE value);
+void bs_remove(bsnode **root, BS_VALUE_TYPE value);
+
 void bs_destroy(bsnode *root);
 
+void bs_print(bsnode *root);
+void bs_print_t(bsnode *root, int level);
 #endif
