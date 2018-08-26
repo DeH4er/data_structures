@@ -171,9 +171,6 @@ void bs_remove(bsnode **root, BS_VALUE_TYPE value)
 
                     most_similar->left = iter->left;
                     most_similar->right = iter->right;
-                    //TODO: bad remove
-                }
-            }
             else if (iter->left != NULL)
             {
                 most_similar = iter->left;
