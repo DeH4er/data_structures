@@ -4,3 +4,4 @@ My implementation of basic data structures.
 Implemented data structures:
 * Linked list
 * Graph
+* Stack with linked list
